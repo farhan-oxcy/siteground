@@ -3,8 +3,6 @@ on:
     branches:
       - master
 
-name: Deploy website on push
-=======
 name: Deploy website on push(prod)
 
 jobs:

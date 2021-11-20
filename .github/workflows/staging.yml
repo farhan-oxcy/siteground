@@ -17,4 +17,4 @@ jobs:
         server: stgtesting.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/cicd1.stgtesting.com/
+        server-dir: /staging.stgtesting.com/public_html/

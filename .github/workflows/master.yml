@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: Deploy website on push
+name: Deploy website on push(prod)
 jobs:
   web-deploy:
     name: Deploy
@@ -14,7 +14,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: cicd1.stgtesting.com
-        username: ${{ secrets.ftp_username}}
+        server: stgtesting.com
+        username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/production.stgtesting.com/
+        server-dir: /production.stgtesting.com/public_html/

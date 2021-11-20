@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-      - master
-name: Deploy website on push
+      - stage
+name: Deploy website on push(staging)
 jobs:
   web-deploy:
     name: Deploy
